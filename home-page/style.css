@@ -1,0 +1,102 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Secular One', sans-serif;
+}
+
+a {
+  margin: 15px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover{
+  
+}
+
+p{
+  font-size: 24px;
+  line-height: 50px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Secular One', sans-serif;
+} 
+
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+.navbar h1, a, p{
+  color: white;
+}
+
+.nav{
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+
+.logo{
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 32px;
+} 
+
+.banner-area{
+  position: relative;
+  background-position: center;
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/1725416136413988534/DF1C74E087B1BFBA41B3F1318179DFE4217EEC16/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.champions-area, .simulator-area{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 700px;
+}
+
+.champions-area{
+  background: #fefefe;
+}
+
+.champions-area p{
+  color: black;
+}
+
+.simulator-area{
+  background: #262626;
+  color: #fff
+}
+
+.text-part{
+  width: 65%;
+  height: 80%;
+}
