@@ -52,6 +52,17 @@ h1{
   margin-right: 15%;
 }
 
+.nav li{
+  -webkit-transform: all 0.7s ease;
+  transition: all 0.7 ease;
+  overflow: hidden;
+}
+
+.nav li:hover{
+  -webkit-transform: scale(1.2);
+  transition: scale(1.2);
+}
+
 .logo{
   flex: 1 1 auto;
   margin-left: 10%;
@@ -71,6 +82,7 @@ h1{
   -webkit-background-size: cover;
   background-size: cover;
 }
+
 
 .champions-area, .simulator-area{
   position: relative;
