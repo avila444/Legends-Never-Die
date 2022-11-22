@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
   <title>CBLOL - Simulador</title>
 </head>
 
@@ -17,25 +16,33 @@
     <h1 class="logo">League of Legends</h1>
     <ul class="nav">
       <li><a>Home</a></li>
-      <li><a>Campeões</a></li>
-      <li><a href="simulador.html">Simulador</a></li>
+      <li><a href="champions-area" target="_blank">Campeões</a></li>
+      <li><a href="simulador.html" target="_blank">Simulador</a></li>
     </ul>
   </div>
   
-  <div class="slideshow">
-    <div class="slide fade">
-      <img src="https://steamuserimages-a.akamaihd.net/ugc/1725416136413988534/DF1C74E087B1BFBA41B3F1318179DFE4217EEC16/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
-    </div>
-
-    <div class="slide fade">
-      <img src="ireliasentinela.jpg">
-    </div>
-
-    <div class="slide fade">
-      <img src="settflorescer.jpg">
-    </div>
-
+  <div class="slideshow" style="max-width:100%; position: sticky;">
+      <img class="mySlides" src="https://steamuserimages-a.akamaihd.net/ugc/1725416136413988534/DF1C74E087B1BFBA41B3F1318179DFE4217EEC16/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" style="width:100%">
+      <img class="mySlides" src="ireliasentinela.jpg" style="width:100%">
+      <img class="mySlides" src="settflorescer.jpg" style="width:100%">
   </div>
+
+  <script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			  x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.lenght) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 5000);
+		}
+	</script>
   
   <div class="champions-area" id="champions">
     <div class="text-part">
@@ -48,6 +55,63 @@
     <div class="text-part">
       <h1>Simulador</h1>
       <p>Quem irá ao mata-mata? E quem levantará a taça? Dê seus palpites e compartilhe!</p>
+      <table>
+        <tr>
+          <th>Times</th>
+          <th>1º</th>
+          <th>2º</th>
+          <th>3º</th>
+          <th>4º</th>
+          <th>5º</th>
+          <th>6º</th>
+        </tr>
+        <tr>
+          <td>Fúria</td>
+          <td>
+              <form id="furia">
+                <input type="radio" name="furia" value="primeirolugar">
+          </td>
+          <td>
+              <input type="radio" name="furia" value="segundolugar">
+          </td>
+          <td>
+              <input type="radio" name="furia" value="terceirolugar">
+          </td>
+          <td>
+              <input type="radio" name="furia" value="quartolugar">
+          </td>
+          <td>
+              <input type="radio" name="furia" value="quintolugar">
+          </td>
+          <td>
+              <input type="radio" name="furia" value="sextolugar">
+              </form>
+          </td>
+        </tr>
+        <tr>
+          <td>Loud</td>
+          <td>
+              <form id="loud">
+                <input type="radio" name="loud" value="primeirolugar">
+          </td>
+          <td>
+              <input type="radio" name="loud" value="segundolugar">
+          </td>
+          <td>
+              <input type="radio" name="loud" value="terceirolugar">
+          </td>
+          <td>
+              <input type="radio" name="loud" value="quartolugar">
+          </td>
+          <td>
+              <input type="radio" name="loud" value="quintolugar">
+          </td>
+          <td>
+              <input type="radio" name="loud" value="sextolugar">
+              </form>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 

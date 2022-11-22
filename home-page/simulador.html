@@ -3,9 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Simulador</title>
+	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<img src="furia.png">
+	<div class="slideshow" style="max-width:500px">
+		<img class="mySlides" src="https://steamuserimages-a.akamaihd.net/ugc/1725416136413988534/DF1C74E087B1BFBA41B3F1318179DFE4217EEC16/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" style="width:100%">
+		<img class="mySlides" src="ireliasentinela.jpg" style="width:100%">
+		<img class="mySlides" src="settflorescer.jpg" style="width:100%">
+	</div>
+	<script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.lenght) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 100); // Change image every 2 seconds
+		}
+		</script>
+		
 </body>
 </html>
