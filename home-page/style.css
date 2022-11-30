@@ -80,6 +80,14 @@ h1{
   height: 1080px;
 }
 
+#slideshow{
+  transition: opacity 5s;
+}
+
+#slideshow.fade{
+  opacity: 0;
+}
+
 .mySlides:not(:first-of-type){
    display: none;
 }
