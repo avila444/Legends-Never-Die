@@ -1,5 +1,5 @@
 # Projeto: Legends Never Die
-Projeto do site que possui uma página inicial, de campeões e um simulador do CBLOL. 
+Projeto do site que possui uma página inicial, de campeões e um simulador do CBLOL. </br>
 By: Miguel Avila de Oliveira e Nicolas Monteiro Longo.
 
 * Competências Utilizadas:
