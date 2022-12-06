@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Secular+One&display=swap" rel="stylesheet"> 
-	<title>Personagens de League of Legends</title>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <title>League of Legends - Campeões e Simulador CBLOL</title>
 </head>
+
 <body>
-<div id="background">
-	<h1 style="color: whitesmoke; font-family: 'Secular One', sans-serif;" id="titulo">LEGENDS NEVER DIEEEEEEEEEE WHEN THE WORLDS IS CALLING YOU </h1>
-	<div id="champions">
-		<ul>
-			<li><img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blta877c35110144de9/60ee0b25b9fc8939338c07ae/aatrox-splash.jpg" style="background-position: 70.3646% 32.037%; background-size: 350%; opacity: 1; top: 20.74px; width: 80.52px; height: 80.52px; left: 20.74px";><p>Aatrox</p></li>
-			<li><img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/bltda668b66206f7f9e/60ee0b41cdb93c284ee3e936/Ahri_0.jpg" style="background-position: 70.3646% 32.037%; background-size: 350%; opacity: 1; top: 20.74px; width: 80.52px; height: 80.52px; left: 20.74px";><p>Ahri</p></li>
-		</table>
-	</div>
-</div>
+	<div id="navbar">
+	    <h1 class="logo">League of Legends</h1>
+	    <ul class="nav">
+	      <li><a href="#slideshow">Home</a></li>
+	      <li><a href="#champions-area">Campeões</a></li>
+	      <li><a href="#simulator-area">Simulador</a></li>
+	    </ul>
+  	</div>
+  	</span>
+  	<audio id="amumu-audio"><source src="amumu.mp3" type="audio/mpeg"></audio>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()">
+
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+	<img src="images/amumu.jpg" class="campeoes-img" onclick="som()"><p>Ahri</p>
+
+	<script type="text/javascript">
+		var amumu = document.getElementById("amumu-audio");
+
+		function som(){
+			amumu.play();
+		}
+	</script>
 </body>
 </html>

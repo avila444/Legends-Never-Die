@@ -6,8 +6,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>CBLOL - Simulador</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <title>League of Legends - Campeões e Simulador CBLOL</title>
 </head>
 
 <body>
@@ -38,7 +41,6 @@
 		var myIndex = 0;
     var fade = document.getElementById("slideshow");
 		carousel();
-    fadeout();
 		
 		function carousel() {
 		  var i;
@@ -51,18 +53,8 @@
         myIndex = 1;
       }
 		  x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 4900);
+      setTimeout(carousel, 5000);
 		}
-
-    function fadeout(){
-      fade.className = '';
-      setTimeout(fadein, 2500);
-    }
-
-    function fadein(){
-      fade.className = 'fade';
-      setTimeout(fadeout, 2500);
-    }
 
 	</script>
   
@@ -72,7 +64,7 @@
       <p>Escolha seu campeão. Com mais de 140 Campeões, você encontrará a combinação perfeita para seu estilo de jogo. Especialize-se em um estilo ou em todos.</p>
     </div>
     <div class="champions-part">
-      
+      <a href="../champions-page/champions.html"><button class="botao" id="b1"><span>Descubra campeões</span></button></a>
     </div>
   </div>
   
@@ -80,63 +72,7 @@
     <div class="text-part">
       <h1>Simulador</h1>
       <p>Quem irá ao mata-mata? E quem levantará a taça? Dê seus palpites e compartilhe!</p>
-      <table>
-        <tr>
-          <th>Times</th>
-          <th>1º</th>
-          <th>2º</th>
-          <th>3º</th>
-          <th>4º</th>
-          <th>5º</th>
-          <th>6º</th>
-        </tr>
-        <tr>
-          <td>Fúria</td>
-          <td>
-              <form id="furia">
-                <input type="radio" name="furia" value="primeirolugar">
-          </td>
-          <td>
-              <input type="radio" name="furia" value="segundolugar">
-          </td>
-          <td>
-              <input type="radio" name="furia" value="terceirolugar">
-          </td>
-          <td>
-              <input type="radio" name="furia" value="quartolugar">
-          </td>
-          <td>
-              <input type="radio" name="furia" value="quintolugar">
-          </td>
-          <td>
-              <input type="radio" name="furia" value="sextolugar">
-              </form>
-          </td>
-        </tr>
-        <tr>
-          <td>Loud</td>
-          <td>
-              <form id="loud">
-                <input type="radio" name="loud" value="primeirolugar">
-          </td>
-          <td>
-              <input type="radio" name="loud" value="segundolugar">
-          </td>
-          <td>
-              <input type="radio" name="loud" value="terceirolugar">
-          </td>
-          <td>
-              <input type="radio" name="loud" value="quartolugar">
-          </td>
-          <td>
-              <input type="radio" name="loud" value="quintolugar">
-          </td>
-          <td>
-              <input type="radio" name="loud" value="sextolugar">
-              </form>
-          </td>
-        </tr>
-      </table>
+      <a href="../simulator-page/simulador.html"><button class="botao" id="b2"><span>Simule o CBLOL</span></button></a>
     </div>
   </div>
 
