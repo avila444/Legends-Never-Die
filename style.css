@@ -32,31 +32,15 @@ h1{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: rgba(0,0,0,0.3);
+  background-color: #262626;
   width: 100%;
   height: 70px;
   z-index: 1;
 }
 
-#navbar2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  background-color: rgba(0,0,0,0.3);
-  width: 100%;
-  height: 70px;
-  z-index: 1;
-  text-align: center;
-}
-
-
-.navbar h1, a, p{
+#navbar h1, a, p{
   color: whitesmoke;
-}
-
-.navbar2 h1, a, p{
-  color: whitesmoke;
+  text-decoration: none;
 }
 
 .nav{
@@ -66,13 +50,14 @@ h1{
   margin-right: 15%;
 }
 
-.nav li{
+#navbar li{
   -webkit-transform: all 0.7s ease;
   transition: all 0.7 ease;
   overflow: hidden;
 }
 
-.nav li:hover{
+#navbar li:hover{
+  transition: 0.2s;
   -webkit-transform: scale(1.2);
   transition: scale(1.2);
 }
@@ -108,6 +93,16 @@ h1{
   height: 100vh;
 }
 
+.text-part h1{
+  font-size: 100px;
+}
+
+.text-part p{
+  font-size: 30px;
+  margin-top: -50px;
+  margin-bottom: 75px;
+}
+
 #champions-area{
   background: whitesmoke;
 }
@@ -134,7 +129,7 @@ h1{
   padding: 20px;
   width: 350px;
   cursor: pointer;
-  font-family: 'Secular One', sans-serif;   
+  font-family: 'Secular One', sans-serif;
 }
 
 .botao span {
@@ -180,11 +175,28 @@ h1{
   background-color: #faf9f6;
 }
 
+.champions-box{
+  background-color: whitesmoke;
+
+}
+
+.champions-box{
+  display: flex;
+  justify-content: center;
+}
+
+#champions-line{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  display: ;
+}
 
 .campeoes-img{
-  width: 100px;
-  height: 100px;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 200px;
+  height: 350px;
   object-fit: cover;
-  object-position: 80%;
-  border-radius: 100px;
 }
