@@ -38,7 +38,7 @@ h1{
   z-index: 1;
 }
 
-#navbar h1, a, p{
+#navbar a, p{
   color: whitesmoke;
   text-decoration: none;
 }
@@ -71,6 +71,11 @@ h1{
   font-size: 32px;
   color: whitesmoke;
 } 
+
+#navbar a:hover{
+  transition: .5s ease;
+  color: #eccf41;
+}
 
 .mySlides {
   display:none;
@@ -204,7 +209,7 @@ h1{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #5dade2;
+  background-color: #262626;
   overflow: hidden;
   width: 200px;
   height: 0;
@@ -213,12 +218,13 @@ h1{
 }
 
 .container:hover .overlay {
-  height: 350px;
+  height: 175px;
   opacity: 0.9;
 }
 
 .nome_campeoes{
   font-family: 'Secular One', sans-serif;
+  margin-top: 0px;
   margin-left: 10px;
 }
 
@@ -237,6 +243,18 @@ h1{
   background-color: black;
 }
 
+#big-container h1{
+  display:  inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#big-container table{
+  display:  inline-flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
 #orgs-container{
   display:  inline-flex;
   justify-content: center;
@@ -244,6 +262,7 @@ h1{
   height: 150vh;
   padding-top: 70px;
   background-color: #262626;
+  float: left;
 
 }
 
@@ -256,4 +275,14 @@ h1{
 
 .org span{
   height: 100px;
+}
+
+#tournament{
+  padding-top: 70px;
+  display:  inline-flex;
+  justify-content: center;
+  background: whitesmoke;
+  width: 50%;
+  height: 150vh;
+  float: right;
 }
