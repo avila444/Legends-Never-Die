@@ -23,20 +23,101 @@
   	</div>
   	<audio id="amumu-audio"><source src="amumu.mp3" type="audio/mpeg"></audio>
 
-  	<div class="champions-box">
-  		<div id="champions-line">
-	  		<img src="images/ahri.jpg" class="campeoes-img" style="object-position: 70%;">
-			<img src="images/amumu.jpg" class="campeoes-img" onclick="som()" style="object-position: 75%;">
-	  		<img src="images/braum.jpg" class="campeoes-img" style="object-position: 82%;">
-	  		<img src="images/ezreal.jpg" class="campeoes-img" style="object-position: 65%;">
-	  		<img src="images/heimer.jpg" class="campeoes-img" style="object-position: 65%;">	
-	  		<img src="images/ivern.jpg" class="campeoes-img" style="object-position: 70%;">
-			<img src="images/jinx.jpg" class="campeoes-img" onclick="som()" style="object-position: 75%;">
-	  		<img src="images/kindred.jpg" class="campeoes-img" style="object-position: 65%;">	
-	  		<img src="images/lulu.jpg" class="campeoes-img" style="object-position: 82%;">
-	  		<img src="images/mordekaiser.jpg" class="campeoes-img" style="object-position: 65%;">
-  		</div>
-	</div>
+  	<table id="champions-row">
+  		<tr>
+  			<td>
+			  	<div class="container">
+			 			<img src="images/ahri.jpg" class="campeoes-img" style="object-position: 70%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Ahri</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+  			<td>
+			  	<div class="container" onclick="som()">
+			 			<img src="images/amumu.jpg" class="campeoes-img" style="object-position: 75%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Amumu</p>
+				  	</div>
+				  </div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="images/braum.jpg" class="campeoes-img" style="object-position: 82%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Braum</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+				<td>
+			  	<div class="container">
+			 			<img src="images/ezreal.jpg" class="campeoes-img" style="object-position: 65%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Ezreal</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="images/heimer.jpg" class="campeoes-img" style="object-position: 78%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Heimerdinger</p>
+				  	</div>
+			  	</div>
+		  	</td>
+			</tr>
+
+			<tr>
+  			<td>
+			  	<div class="container">
+			 			<img src="images/ivern.jpg" class="campeoes-img" style="object-position: 55%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Ivern</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+  			<td>
+			  	<div class="container">
+			 			<img src="images/jinx.jpg" class="campeoes-img" style="object-position: 80%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Jinx</p>
+				  	</div>
+				  </div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="images/kindred.jpg" class="campeoes-img" style="object-position: 80%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Kindred</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+				<td>
+			  	<div class="container">
+			 			<img src="images/lulu.jpg" class="campeoes-img" style="object-position: 82%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Lulu</p>
+				  	</div>
+			  	</div>
+		  	</td>
+
+		  	<td>
+			  	<div class="container">
+			 			<img src="images/mordekaiser.jpg" class="campeoes-img" style="object-position: 45%;">
+				  	<div class="overlay">
+				  		<p class="nome_campeoes">Mordekaiser</p>
+				  	</div>
+			  	</div>
+		  	</td>
+			</tr>
+	  </table>
 
 	<script type="text/javascript">
 		var amumu = document.getElementById("amumu-audio");
