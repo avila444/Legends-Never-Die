@@ -243,12 +243,6 @@ h1{
   background-color: black;
 }
 
-#big-container h1{
-  display:  inline-flex;
-  justify-content: center;
-  text-align: center;
-}
-
 #big-container table{
   display:  inline-flex;
   justify-content: center;
@@ -262,20 +256,18 @@ h1{
   height: 150vh;
   padding-top: 70px;
   background-color: #262626;
-<<<<<<< HEAD
   float: left;
-
-=======
->>>>>>> 0409a0974555a83baa1e7a478e1f78ba095c93b6
 }
 
 .org{
   width: 150px;
   height: 150px;
   padding: 10px;
-  margin: 25px;
+  margin-top: 25px;
+  margin-right: 25px;
   border-radius: 80px;
   background-color: whitesmoke;
+  cursor: pointer;
 }
 
 .org:hover{
@@ -288,24 +280,37 @@ h1{
   padding-bottom: 30px;
 }
 
-.org span{
-  height: 100px;
-}
-
-<<<<<<< HEAD
 #tournament{
   padding-top: 70px;
-  display:  inline-flex;
+  display: inline-flex;
   justify-content: center;
   background: whitesmoke;
   width: 50%;
   height: 150vh;
   float: right;
 }
-=======
+
 #img-times{
   width: 170px;
   height: 170px;
 }
 
->>>>>>> 0409a0974555a83baa1e7a478e1f78ba095c93b6
+.titulo{
+  color: whitesmoke;
+  height: 100px;
+  margin-right: -150px;
+}
+
+.position{
+  width: 170px;
+  height: 170px;
+  padding: 10px;
+  border: solid #262626;
+  border-radius: 100px;
+}
+
+#tournament p{
+  padding-top: 150px;
+  color:  #262626;
+  text-align: center;
+}
