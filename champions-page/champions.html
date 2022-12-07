@@ -21,7 +21,10 @@
 	      <li><a href="../simulator-page/simulador.html">Simulador</a></li>
 	    </ul>
   	</div>
+
   	<audio id="amumu-audio"><source src="amumu.mp3" type="audio/mpeg"></audio>
+  	<audio id="lulu-audio"><source src="lulu.mp3" type="audio/mpeg"></audio>
+
 
   	<table id="champions-row">
   		<tr>
@@ -35,7 +38,7 @@
 		  	</td>
 
   			<td>
-			  	<div class="container" onclick="som()">
+			  	<div class="container" onclick="som_amumu()">
 			 			<img src="images/amumu.jpg" class="campeoes-img" style="object-position: 75%;">
 				  	<div class="overlay">
 				  		<p class="nome_campeoes">Amumu</p>
@@ -100,7 +103,7 @@
 		  	</td>
 
 				<td>
-			  	<div class="container">
+			  	<div class="container" onclick="som_lulu()">
 			 			<img src="images/lulu.jpg" class="campeoes-img" style="object-position: 82%;">
 				  	<div class="overlay">
 				  		<p class="nome_campeoes">Lulu</p>
@@ -121,10 +124,16 @@
 
 	<script type="text/javascript">
 		var amumu = document.getElementById("amumu-audio");
+		var lulu = document.getElementById("lulu-audio");
 
-		function som(){
+		function som_amumu(){
 			amumu.play();
 		}
+
+		function som_lulu(){
+			lulu.play();
+		}
+
 	</script>
 
 </body>

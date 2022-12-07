@@ -1,34 +1,74 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <title>League of Legends - Campeões e Simulador CBLOL</title>
 </head>
+
 <body>
-	<div class="slideshow" style="max-width:500px">
-		<img class="mySlides" src="https://steamuserimages-a.akamaihd.net/ugc/1725416136413988534/DF1C74E087B1BFBA41B3F1318179DFE4217EEC16/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" style="width:100%">
-		<img class="mySlides" src="ireliasentinela.jpg" style="width:100%">
-		<img class="mySlides" src="settflorescer.jpg" style="width:100%">
-	</div>
-	<script>
-		var myIndex = 0;
-		carousel();
-		
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {
-		  	myIndex = 1;
-		  }
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 1000);
-		}
-		</script>
-		
+	<div id="navbar">
+	    <h1 class="logo"><a href="../home-page/index.html">League of Legends</a></h1>
+	    <ul class="nav">
+	      <li><a href="../home-page/index.html">Home</a></li>
+	      <li><a href="../champions-page/champions.html">Campeões</a></li>
+	      <li><a href="../simulator-page/simulador.html">Simulador</a></li>
+	    </ul>
+  	</div>
+
+  <div id="big-container">
+	  <div id="orgs-container">
+	  	<table>
+	  		<tr>
+	  			<td>
+				  	<img src="images/fluxo.png" class="org" dragabble="true">
+				</td>
+				<td>
+				  	<img src="images/furia.png" class="org" dragabble="true">
+				</td>
+				<td>
+				  	<img src="images/intz.png" class="org" dragabble="true" style="height: 110px;">
+				</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+				  	<img src="images/kabum.png" class="org" dragabble="true" style="height: 140px;">
+				</td>
+				<td>
+				  	<img src="images/liberty.png" class="org" dragabble="true">
+				</td>
+				<td>
+				  	<img src="images/losgrandes.png" class="org" dragabble="true">
+				</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+				  	<img src="images/loud.png" class="org" dragabble="true">
+				</td>
+				<td>
+				  	<img src="images/pain.png" class="org" dragabble="true">
+				</td>
+				<td>
+				  	<img src="images/red.png" class="org" dragabble="true">
+				</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  			</td>
+	  			<td>
+				  	<img src="images/vivokeyd.png" class="org" dragabble="true">
+				</td>
+	  		</tr>
+	  	</table>
+	  </div>
+  </div>
+
+
 </body>
 </html>

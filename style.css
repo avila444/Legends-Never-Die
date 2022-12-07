@@ -230,3 +230,30 @@ h1{
   height: 100%;
   background-color: whitesmoke;
 }
+
+#big-container{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#orgs-container{
+  display:  inline-flex;
+  justify-content: center;
+  width: 50%;
+  height: 150vh;
+  padding-top: 70px;
+  background-color: #262626;
+
+}
+
+.org{
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 200px;
+  height: 200px;
+}
+
+.org span{
+  height: 100px;
+}
