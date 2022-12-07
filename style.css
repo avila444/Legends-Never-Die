@@ -262,21 +262,37 @@ h1{
   height: 150vh;
   padding-top: 70px;
   background-color: #262626;
+<<<<<<< HEAD
   float: left;
 
+=======
+>>>>>>> 0409a0974555a83baa1e7a478e1f78ba095c93b6
 }
 
 .org{
-  margin-top: 40px;
-  margin-left: 40px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin: 25px;
+  border-radius: 80px;
+  background-color: whitesmoke;
+}
+
+.org:hover{
+  background-color: #eccf41;
+  transition: 0.5s;
+}
+
+#img-intz{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .org span{
   height: 100px;
 }
 
+<<<<<<< HEAD
 #tournament{
   padding-top: 70px;
   display:  inline-flex;
@@ -286,3 +302,10 @@ h1{
   height: 150vh;
   float: right;
 }
+=======
+#img-times{
+  width: 170px;
+  height: 170px;
+}
+
+>>>>>>> 0409a0974555a83baa1e7a478e1f78ba095c93b6
